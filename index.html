@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="fonts/iconfont.css" />
+	<link rel="stylesheet" href="public/css/common.css" />
+	<link rel="stylesheet" href="public/css/reset.css" />
+	<link rel="stylesheet" href="public/css/style.css" />
+</head>
+<body ng-controller="myCtrl">	
+	<header>
+		<div></div>
+		<h1>公司</h1>
+		<div><i class="iconfont icon-fangdajing"></i></div>
+	</header>
+	<section>
+		<div class="content">
+			<ul class="nav">
+				<li>独资</li>
+				<li>规模</li>
+				<li>企业</li>
+			</ul>
+			<dl ng-repeat="item in data">
+				<dt><img src="{{item.img}}" alt="" /></dt>
+				<dd>
+					<h2>{{item.name}}</h2>
+					<p>{{item.address}}</p>
+					<p>
+						<span>{{item.work}}</span>
+						<span>{{item.ss}}</span>
+						<span>{{item.people}}</span>
+					</p>
+					<p>
+						<span>热招:{{item.zw}}等12个职位</span>
+					</p>
+				</dd>
+			</dl>
+		</div>
+	</section>
+	<footer></footer>
+	<script src="script/angular.js"></script>
+	<script src="script/app.js"></script>
+	<script src="controller/ctrl.js"></script>
+</body>
+</html>

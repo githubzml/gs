@@ -1,0 +1,46 @@
+body{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	font-size: .12rem;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	height: .45rem;	
+	line-height: .45rem;
+	padding: 0 .1rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+section{
+	flex: 1;
+	overflow-y: scroll;
+}
+.content .nav{
+	display: flex;
+}
+.content .nav li{
+	flex: 1;
+	text-align: center;
+	line-height: .45rem;
+	padding: 0 .1rem;
+}
+.content dl{
+	display: flex;
+}
+.content dl dt{
+	flex: 2;
+}
+.content dl dd{
+	flex: 8;
+	padding-left: .1rem;
+}
+.content dl dd p{
+	padding-top: .1rem;
+}
+footer{
+	height: .45rem;	
+}
